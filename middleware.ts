@@ -6,7 +6,7 @@ function preferredLocale(request: NextRequest) {
   return locales.find((locale) => accepted.includes(locale)) || "de";
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const response =
     pathname === "/"
