@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.open-next/
+.env
+.env.local
+*.log
+*.tsbuildinfo
+.pdf-preview/
+.screenshots/
+worker-configuration.d.ts
+Dokument*.pdf
+WhatsApp Image*
