@@ -1,8 +1,10 @@
 node_modules/
+.node/
 .next/
 .open-next/
 .env
 .env.local
+.env*.local
 *.log
 *.tsbuildinfo
 .pdf-preview/
