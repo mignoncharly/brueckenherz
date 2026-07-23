@@ -13,5 +13,5 @@ export const site = {
   email: "Brueckenherzteam@gmail.com",
   whatsapp: "https://wa.me/4915755977679",
   foundingDate: "2026-06-10",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.brueckenherz.de",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://brueckenherz-mainz.amtklarpro.de",
 };
