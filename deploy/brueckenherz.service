@@ -1,0 +1,24 @@
+[Unit]
+Description=Brückenherz Next.js Website
+After=network.target
+
+[Service]
+Type=simple
+User=mignon
+Group=mignon
+WorkingDirectory=/home/mignon/apps/brueckenherz
+Environment=NODE_ENV=production
+Environment=PORT=3003
+Environment=HOSTNAME=127.0.0.1
+Environment=PATH=/home/mignon/apps/brueckenherz/.node/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+EnvironmentFile=-/home/mignon/apps/brueckenherz/.env.production.local
+ExecStart=/home/mignon/apps/brueckenherz/.node/bin/node /home/mignon/apps/brueckenherz/node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3003
+Restart=on-failure
+RestartSec=5s
+TimeoutStopSec=20
+KillSignal=SIGTERM
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
